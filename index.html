@@ -1,0 +1,512 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap Design</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <style>
+    .card{
+      border: none;
+    }
+    .card:hover{
+      transform: scale(1.05);
+      transition-duration: 0.5s;
+      cursor: pointer;
+    }
+    .bg-img {
+      background-image: url(image/shop.jpg);
+      background-size: cover;
+      background-position: center;
+      height: 90vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+    }
+
+    .box1 {
+      height: 1000vh;
+      background-color: beige;
+    }
+
+    .box1 h1 {
+      margin-left: 20px;
+    }
+    a{
+      text-decoration: none;
+    
+    }
+ @media (min-width: 1200px) {
+  .hero-text {
+    font-size: 500px;
+    }
+  }
+   @media (max-width: 500px) {
+  .hero-text {
+    font-size: 100px;
+}
+   }
+  </style>
+</head>
+
+<body>
+  <!--navbaar start-->
+  <nav class="navbar navbar-expand-lg bg-light rounded rounded-pill py-2 shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#"><i class="bi me-3"></i>Stuffsus</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav m-auto mb-4 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active mx-2  btn btn-sm   rounded-pill btn-light" aria-current="page" href="">Beranda</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active mx-2 fw-bold  btn btn-sm  rounded-pill btn-light" href="">Shop</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active mx-2  btn btn-sm  rounded-pill btn-light"> Blog</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <i class="bi bi-search me-3 btn btn-sm px-2 rounded-pill btn-light"></i>
+          <i class="bi bi-basket3-fill me-3 btn btn-sm px-2 rounded-pill btn-light"></i>
+          <i class="bi bi-person-square me-3 btn btn-sm px-2 rounded-pill btn-light"></i>
+        </form>
+
+
+      </div>
+    </div>
+  </nav>
+  <!--navbaar end-->
+  <!--Second page start-->
+  <div class="bg-img A1">
+    <p class="text-center text-white hero-text">Shop</p>
+</div>
+
+
+  <!--Second page end-->
+  <!--2nd navbar start-->
+  <nav class="navbar navbar-expand-lg bg-light mt-3 py-3 shadow-sm">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Give All You Need</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <form class="d-flex w-100 justify-content-end" role="search">
+         <button class="btn-outline-black d-flex w-80">
+              <i class="bi bi-search me-3"></i>
+              Search on Stuffsus
+             <button class="btn btn-outline-success" type="submit">Search</button>
+             </button>
+
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!--2nd navbar end-->
+  <div class="container">
+    <h1 class="hhh text-black">category</h1>
+    <div class="row justify-content-center">
+      
+      <!--cateory section stars-->
+      <div class="col-lg-3">
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                aria-expanded="true" aria-controls="collapseOne">
+               <i class="bi bi-basket3"></i>  All Product
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+              <i class="bi bi-house-fill"></i>   <a class="ab text-secondary ">For Home</a><br>
+              <i class="bi bi-music-note"></i>   <a class="ab text-secondary" href="">For Music</a><br>
+              <i class="bi bi-phone"></i>        <a class="ab text-secondary">For Phone</a><br>
+              <i class="bi bi-stars"></i>      <a class="ab text-secondary" href="">For Storage</a>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <i class="bi bi-search me-3"></i> New Arrival
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+               <a class="ab text-secondary" href="">Home</a><br>
+               <a class="ab text-secondary" href="">Home</a><br>
+               <a class="ab text-secondary" href="">Home</a><br>
+               <a class="ab text-secondary" href="">Home</a><br>
+              </div>
+            </div>
+          </div>
+           <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <i class="bi bi-disc"></i>   On Discount
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+               <a class="ab text-secondary" href="">Home</a><br>
+               <a class="ab text-secondary" href="">Home</a><br>
+               <a class="ab text-secondary" href="">Home</a><br>
+               <a class="ab text-secondary" href="">Home</a><br>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                <i class="bi bi-stars"></i>   Best Seller
+              </button>                
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+               <a class="ab text-secondary" href="">Home</a><br>
+               <a class="ab text-secondary" href="">Home</a><br>
+               <a class="ab text-secondary" href="">Home</a><br>
+               <a class="ab text-secondary" href="">Home</a><br>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!--cateory section ends-->
+      
+      <!--cards section stars-->
+      <div class="col-lg-9 ">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <div class="card h-100" >
+              <img src="image/15 Porta Suportes Expositor vitrine Mesa Celular….jpg" class="card-img-top rounded-4" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Phone Holder Sakti</h5>
+                <p class="card-text">
+                  <span class="text-secondary"><i class="bi bi-star text-warning"></i>  5.0 (1.2x Reviews)</span>
+                  <span class="fw-bold ms-3" style="font-size: 24px;">$29.90</span>
+                </p>
+                <div class="d-block">
+                <a href="#" class="btn btn-sm px-3 rounded-pill btn-light">Add to Chart</a>
+                <a href="#" class="btn btn-sm px-3 rounded-pill btn-dark">Buy Now </a>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <div class="card  h-100">
+              <img src="image/Maximiza tu experiencia auditiva con los JBuds….jpg" class="card-img-top rounded-4" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Bluetooth Earbuds</h5>
+                <p class="card-text">
+                   <span class="text-secondary"><i class="bi bi-star text-warning"></i>  5.0 (1.2x Reviews)</span>
+                  <span class="fw-bold ms-3" style="font-size: 24px;">$29.90</span>
+                </p>
+                <div class="d-block">
+                   <a href="#" class="btn btn-sm px-3 rounded-pill btn-light">Add to Chart</a>
+                <a href="#" class="btn btn-sm px-3 rounded-pill  btn-dark">Buy Now </a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <div class="card  h-100">
+              <img src="image/How To Take Off Dip Nails _ - My Glow Journey.jpg" class="card-img-top rounded-4" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Bluetooth Headphones</h5>
+                <p class="card-text">
+                  <span class="text-secondary"><i class="bi bi-star text-warning"></i>  5.0 (1.2x Reviews)</span>
+                  <span class="fw-bold ms-3" style="font-size: 24px;">$29.90</span>
+                </p>
+               <div class="d-block">
+                   <a href="#" class="btn btn-sm px-3 rounded-pill btn-light">Add to Chart</a>
+                <a href="#" class="btn btn-sm px-3 rounded-pill  btn-dark">Buy Now </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <div class="card  h-100">
+              <img src="pexels-morningtrain-18105.jpg" class="card-img-top rounded-4" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Laptop</h5>
+                <p class="card-text">
+                  <span class="text-secondary"><i class="bi bi-star text-warning"></i>  5.0 (1.2x Reviews)</span>
+                  <span class="fw-bold ms-3" style="font-size: 24px;">$29.90</span>
+                </p>
+                <div class="d-block">
+                   <a href="#" class="btn btn-sm px-3 rounded-pill btn-light">Add to Chart</a>
+                <a href="#" class="btn btn-sm px-3 rounded-pill  btn-dark">Buy Now </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <div class="card  h-100">
+              <img src="pexels-solliefoto-336948.jpg" class="card-img-top rounded-4" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Smart Phone</h5>
+                <p class="card-text">
+                  <span class="text-secondary"><i class="bi bi-star text-warning"></i>  5.0 (1.2x Reviews)</span>
+                  <span class="fw-bold ms-3" style="font-size: 24px;">$29.90</span>
+                </p>
+                <div class="d-block">
+                   <a href="#" class="btn btn-sm px-3 rounded-pill btn-light">Add to Chart</a>
+                <a href="#" class="btn btn-sm px-3 rounded-pill  btn-dark">Buy Now </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <div class="card  h-100">
+              <img src="pexels-morningtrain-18105.jpg" class="card-img-top rounded-4" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Laptop</h5>
+               <p class="card-text">
+                  <span class="text-secondary"><i class="bi bi-star text-warning"></i>  5.0 (1.2x Reviews)</span>
+                  <span class="fw-bold ms-3" style="font-size: 24px;">$29.90</span>
+                </p>
+                <div class="d-block">
+                   <a href="#" class="btn btn-sm px-3 rounded-pill btn-light">Add to Chart</a>
+                <a href="#" class="btn btn-sm px-3 rounded-pill  btn-dark">Buy Now </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <div class="card  h-100">
+              <img src="image/How To Take Off Dip Nails _ - My Glow Journey.jpg" class="card-img-top rounded-4" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Bluetooth Headphones</h5>
+                <p class="card-text">
+                  <span class="text-secondary"><i class="bi bi-star text-warning"></i>  5.0 (1.2x Reviews)</span>
+                  <span class="fw-bold ms-3" style="font-size: 24px;">$29.90</span>
+                </p>
+                <div class="d-block">
+                   <a href="#" class="btn btn-sm px-3 rounded-pill btn-light">Add to Chart</a>
+                <a href="#" class="btn btn-sm px-3 rounded-pill  btn-dark">Buy Now </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <div class="card  h-100">
+              <img src="image/15 Porta Suportes Expositor vitrine Mesa Celular….jpg" class="card-img-top rounded-4" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Phone Holder Sakti</h5>
+                <p class="card-text">
+                  <span class="text-secondary"><i class="bi bi-star text-warning"></i>  5.0 (1.2x Reviews)</span>
+                  <span class="fw-bold ms-3" style="font-size: 24px;">$29.90</span>
+                </p>
+                <div class="d-block">
+                   <a href="#" class="btn btn-sm px-3 rounded-pill btn-light">Add to Chart</a>
+                <a href="#" class="btn btn-sm px-3 rounded-pill  btn-dark">Buy Now </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <div class="card  h-100" >
+              <img src="image/How To Take Off Dip Nails _ - My Glow Journey.jpg" class="card-img-top rounded-4" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Bluetooth Headphones</h5>
+                <p class="card-text">
+                  <span class="text-secondary"><i class="bi bi-star text-warning"></i>  5.0 (1.2x Reviews)</span>
+                  <span class="fw-bold ms-3" style="font-size: 24px;">$29.90</span>
+                </p>
+                <div class="d-block">
+                   <a href="#" class="btn btn-sm px-3 rounded-pill btn-light">Add to Chart</a>
+                <a href="#" class="btn btn-sm px-3 rounded-pill  btn-dark">Buy Now </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <hr>
+      <div class="row justify-content-between">
+        <div class="col-lg-3">
+         <i class="bi bi-arrow-left"></i> Previous
+        </div>
+        <div class="col-lg-3">
+          <a class="text-black btn btn-sm px-2 rounded-pill btn-light" href="">1</a>
+          <a class="text-black  btn btn-sm px-2 rounded-pill btn-light " href="">2</a>
+          <a class="text-black  btn btn-sm px-2 rounded-pill btn-light " href="">3</a>
+          <a class="text-black  btn btn-sm px-2 rounded-pill btn-light " href="">-</a>
+          <a class="text-black  btn btn-sm px-2 rounded-pill btn-light " href="">8</a>
+          <a class="text-black  btn btn-sm px-2 rounded-pill btn-light " href="">9</a>
+          <a class="text-black  btn btn-sm px-2 rounded-pill btn-light " href="">10</a>
+        </div>
+        <div class="col-lg-3">
+          Next <i class="bi bi-arrow-right"></i>
+        </div>
+      </div>
+    </div>
+    <!--cards section ends-->
+      <br>
+      <br>
+      <!--Explore start-->
+      <h1>Explore our recomendation</h1>
+      <br>
+    <div class="container3">
+      <div class="row">
+        <div class="col-lg-4 col-md-6">
+           <div class="card" style="width: 16rem;">
+              <img src="image/Maximiza tu experiencia auditiva con los JBuds….jpg" class="card-img-top rounded-4" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Bluetooth Earbuds</h5>
+                <p class="card-text">
+                  <span class="text-secondary"><i class="bi bi-star text-warning"></i>  5.0 (1.2x Reviews)</span>
+                  <span class="fw-bold ms-3" style="font-size: 24px;">$29.90</span>
+                </p>
+                <div class="d-block">
+                   <a href="#" class="btn btn-sm px-3 rounded-pill btn-light">Add to Chart</a>
+                <a href="#" class="btn btn-sm px-3 rounded-pill  btn-dark">Buy Now </a>
+                </div>
+             </div>
+            </div>
+          </div>
+               <div class="col-lg-4 col-md-6">
+                 <div class="card" style="width: 16rem;">
+                   <img src="image/How To Take Off Dip Nails _ - My Glow Journey.jpg" class="card-img-top rounded-4" alt="...">
+                     <div class="card-body">
+                        <h5 class="card-title">Bluetooth Headphones</h5>
+                         <p class="card-text">
+                  <span class="text-secondary"><i class="bi bi-star text-warning"></i>  5.0 (1.2x Reviews)</span>
+                  <span class="fw-bold ms-3" style="font-size: 24px;">$29.90</span>
+                </p>
+                <div class="d-block">
+                   <a href="#" class="btn btn-sm px-3 rounded-pill btn-light">Add to Chart</a>
+                <a href="#" class="btn btn-sm px-3 rounded-pill  btn-dark">Buy Now </a>
+                </div>
+                      </div>
+                   </div>
+                </div>
+               <div class="col-lg-4 col-md-6">
+                 <div class="card" style="width: 16rem;">
+                    <img src="image/15 Porta Suportes Expositor vitrine Mesa Celular….jpg" class="card-img-top rounded-4" alt="...">
+                     <div class="card-body">
+                       <h5 class="card-title">Phone Holder Sakti</h5>
+                        <p class="card-text">
+                  <span class="text-secondary"><i class="bi bi-star text-warning"></i>  5.0 (1.2x Reviews)</span>
+                  <span class="fw-bold ms-3" style="font-size: 24px;">$29.90</span>
+                </p>
+                <div class="d-block">
+                   <a href="#" class="btn btn-sm px-3 rounded-pill btn-light">Add to Chart</a>
+                <a href="#" class="btn btn-sm px-3 rounded-pill  btn-dark">Buy Now </a>
+                </div>
+             </div>
+           </div>
+         </div>
+       </div>
+      </div>
+      <br>
+      <br>
+      <br>
+
+      <!--Explore end-->
+    
+    <!--flex section start-->
+    <div class="container1 bg-black rounded-4 text-white py-3 px-5">
+      <div class="row">
+        <div class="col-lg-4">
+          <h1>Ready to Get <br> Our Need Stuff</h1>
+        </div>
+        <div class="row my-3 justify-content-between">
+          <div class="col-lg-3">
+            <input type="text" class="form-control "placeholder="your Email">
+             <a href="#" class="btn btn-sm px-3 rounded-pill  btn-dark">Send </a>
+            </div>
+            <div class="col-lg-5">
+              <div class="fw-bold">Stuffsus for Homes and Needs</div>
+              <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla provident voluptates assumenda ipsa, reiciendis vitae. Alias facere eligendi dolores voluptate!</p>
+            </div>
+        </div>
+       </div>
+      </div>
+     </div>
+  <br>
+  <br>
+    <!--flex section end-->
+
+
+    <!--this last container start-->
+    <div class="containe2 bg-light rounded-4 text-black py-3 px-5">
+      <div class="row justify-content-between">
+        <div class="col-lg-2  ">
+          <a class="text-black fw-bold">About</a><br>
+            <a class="text-black" href="">Blog</a><br>
+            <a class="text-black" href="">Meet THe Team</a><br>
+            <a class="text-black" href="">Contact Us</a><br>
+        </div>
+        <div class="col-lg-2">
+         <a class="text-black fw-bold" href="">Support</a><br>
+         <a class="text-black" href="">Contact Us</a><br>
+         <a class="text-black" href="">Shipping</a><br>
+         <a class="text-black" href="">Return</a><br>
+         <a class="text-black" href="">FAQ</a><br>
+        </div>
+         <div class="col-lg-5">
+           <h6 class="text-black fw-bold">Social Media</h6>
+            <a href=""><i class="bi bi-twitter-x text-black fw-bold"></i><a>
+
+            <a href=""><i class="bi bi-facebook text-black fw-bold"></i></a>
+
+            <a href=""><i class="bi bi-linkedin text-black fw-bold"></i></a>
+
+           <a href=""><i class="bi bi-instagram text-black fw-bold"></i></a>
+         </div>
+        </div>
+      </div>
+
+
+    </div>
+    <hr>
+    <div class="row justify-content-between">
+      <div class="col-lg-3">
+        <h6 class="text-secondary">Copyright 2023 Uangku All Right Reserved </h6>
+        </div>
+<div class="col-lg-6">
+  <h6  class="text-secondary">Terms Of Service</h6>
+</div>
+<div class="col-lg-2">
+<h6  class="text-secondary">Privacy Policy</h6>
+</div>
+    
+    </div>
+
+      <!--this last container-->
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"></script>
+</body>
+
+</html>
